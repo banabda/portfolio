@@ -6,7 +6,9 @@ import "./assets/tailwind.css";
 import "tailwindcss/tailwind.css";
 import VueTypedJs from "vue-typed-js";
 import VueTilt from "vue-tilt.js";
+import VuePageTransition from "vue-page-transition";
 
+Vue.use(VuePageTransition);
 Vue.use(VueTilt);
 Vue.use(VueTypedJs);
 Vue.config.productionTip = false;

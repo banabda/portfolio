@@ -14,31 +14,37 @@ const routes = [
 		path: "/",
 		name: "Main",
 		component: Main,
+		meta: { transition: "overlay-up-down" },
 	},
 	{
 		path: "/me",
 		name: "Me",
 		component: Me,
+		meta: { transition: "overlay-up-down" },
 	},
 	{
 		path: "/education",
 		name: "Education",
 		component: Education,
+		meta: { transition: "overlay-up-down" },
 	},
 	{
 		path: "/experience",
 		name: "Experience",
 		component: Experience,
+		meta: { transition: "overlay-up-down" },
 	},
 	{
 		path: "/projects",
 		name: "Projects",
 		component: Projects,
+		meta: { transition: "overlay-up-down" },
 	},
 	{
 		path: "/contact",
 		name: "Contact",
 		component: Contact,
+		meta: { transition: "overlay-up-down" },
 	},
 	// {
 	// 	path: "/about",

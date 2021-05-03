@@ -17,24 +17,31 @@
         <router-link to="/contact">Contact Me</router-link>
       </div>
     </div>
-    <router-view class="h-3/5" />
+    <vue-page-transition class="h-3/5">
+      <router-view class="h-full" />
+    </vue-page-transition>
   </div>
 </template>
 
 <style lang="scss">
-#app {
-  // font-family: Avenir, Helvetica, Arial, sans-serif;
-  // -webkit-font-smoothing: antialiased;
-  // -moz-osx-font-smoothing: grayscale;
-  // text-align: center;
-  // color: #2c3e50;
-}
+// #app {
+// font-family: Avenir, Helvetica, Arial, sans-serif;
+// -webkit-font-smoothing: antialiased;
+// -moz-osx-font-smoothing: grayscale;
+// text-align: center;
+// color: #2c3e50;
+// }
 .brand {
   @apply text-razer-800;
   &.router-link-exact-active {
     @apply text-razer-600;
   }
 }
+
+:root {
+  --overlay-bg: #00cc14 !important;
+}
+
 #nav {
   // padding: 30px;
 

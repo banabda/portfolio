@@ -5,7 +5,9 @@ import store from "./store";
 import "./assets/tailwind.css";
 import "tailwindcss/tailwind.css";
 import VueTypedJs from "vue-typed-js";
+import VueTilt from "vue-tilt.js";
 
+Vue.use(VueTilt);
 Vue.use(VueTypedJs);
 Vue.config.productionTip = false;
 

@@ -1,7 +1,7 @@
 <template>
     <div class="h-full">
         <div class="h-full items-center justify-center flex">
-            <div class="text-5xl font-extralight tracking-tighter">
+            <div class="text-5xl font-extralight tracking-tight">
                 <div class="mb-6">
                     <vue-typed-js
                         :strings="[
@@ -41,7 +41,7 @@
     </div>
 </template>
 <script>
-import { mapActions } from "vuex";
+import { mapActions, mapGetters } from "vuex";
 export default {
     methods: {
         ...mapActions({
@@ -54,5 +54,11 @@ export default {
     data: () => ({
         nextLine: [],
     }),
+    computed: {
+        ...mapGetters({
+            pages: "me/getPageLength",
+            page: "me/getPage",
+        }),
+    },
 };
 </script>

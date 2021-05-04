@@ -1,6 +1,17 @@
 <template>
     <div class="h-full">
         <div class="h-full items-center justify-center flex">
+            <button
+                @click="minpage"
+                class="duration-1000 ease-in-out transition-opacity rounded-lg p-4 self-end"
+                :class="
+                    nextLine.length >= 2
+                        ? 'opacity-50 hover:opacity-100'
+                        : 'opacity-0'
+                "
+            >
+                ← PREV
+            </button>
             <div class="text-5xl font-extralight tracking-tighter">
                 <div class="mb-6">
                     <vue-typed-js

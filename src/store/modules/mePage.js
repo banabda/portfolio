@@ -3,7 +3,8 @@ const mePage = {
 
 	state: () => ({
 		page: 0,
-		pages: 3,
+		pages: 5,
+		openedPage: [false, false, false],
 	}),
 
 	mutations: {
@@ -17,6 +18,12 @@ const mePage = {
 	getters: {
 		getPage(state) {
 			return state.page;
+		},
+		getPageLength(state) {
+			return state.pages;
+		},
+		getOpenedPage(state) {
+			return state.openedPage;
 		},
 	},
 

@@ -24,7 +24,7 @@
           :strings="[
             `Welcome to <a href='/about' class='font-bold underline'>Bagas</a> Portfolio!`,
           ]"
-          @onComplete="[nextLine.push(1), (showCursor = false)]"
+          @onComplete="nextLine.push(1)"
           :contentType="'html'"
         >
           <h1 class="typing"></h1>

@@ -14,7 +14,7 @@ Vue.use(VuePageTransition);
 Vue.use(VueTilt);
 Vue.use(VueTypedJs);
 Vue.config.productionTip = false;
-
+process.env["GOOGLE"] = "testing";
 new Vue({
 	router,
 	store,

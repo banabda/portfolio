@@ -9,8 +9,13 @@ const mePage = {
 
 	mutations: {
 		setPage(state, payload) {
-			if (state.page >= 0 && state.page < 3) {
+			if (payload == -1 && state.page > 0) {
 				state.page += payload;
+			} else if (state.page < state.pages && payload == 1) {
+				state.page += payload;
+			}
+			if (payload != -1 && payload != 1) {
+				state.page = payload;
 			}
 		},
 	},
@@ -33,6 +38,9 @@ const mePage = {
 		},
 		subPage(state) {
 			state.commit("setPage", -1);
+		},
+		goToPage(state, payload) {
+			state.commit("setPage", payload);
 		},
 	},
 };

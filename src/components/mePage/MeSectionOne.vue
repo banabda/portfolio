@@ -26,31 +26,12 @@
                     </vue-typed-js>
                 </div>
             </div>
-            <button
-                @click="pluspage"
-                class="duration-1000 ease-in-out transition-opacity rounded-lg p-4 self-end"
-                :class="
-                    nextLine.length >= 2
-                        ? 'opacity-50 hover:opacity-100'
-                        : 'opacity-0'
-                "
-            >
-                NEXT →
-            </button>
         </div>
     </div>
 </template>
 <script>
-import { mapActions, mapGetters } from "vuex";
+import { mapGetters } from "vuex";
 export default {
-    methods: {
-        ...mapActions({
-            addpage: "me/addPage",
-        }),
-        pluspage() {
-            this.addpage();
-        },
-    },
     data: () => ({
         nextLine: [],
     }),
